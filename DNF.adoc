@@ -1,0 +1,24 @@
+= DNF Package Manager Tips
+
+== Check package/s changelogs
+
+[cols=2, options="header"]
+|===
+|Command
+|Description
+
+|*dnf updateinfo*
+|Display pending changelog counts of all pacakges with pending updates.
+
+|*dnf updateinfo info*
+|Display verbose information about changelogs of all pacakges with pending updates.
+
+|*dnf updateinfo list*
+|Display 2 column list, changelog name and package of all pacakges with pending updates.
+
+|===
+
+*NOTE:* Once all the pending updates have been applied, the above commands no longer return output. After installation, RPM's changelog command can be used to query changelog information for packages.
+
+
+*Command: _rpm -q --changelog openssh-server_*
